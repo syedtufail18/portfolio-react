@@ -28,7 +28,8 @@
       position: absolute;
       margin: auto;
       stroke: orange;
-      fill:orange
+      fill:orange;
+      z-index: -1;
     }
     form {
       display: flex;
