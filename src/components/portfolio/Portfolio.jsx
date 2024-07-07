@@ -29,10 +29,6 @@ const items = [
   },
 ];
 
-// const variants = {
-//     visible: { opacity: 1, scale: 1 },
-//     hidden: { opacity: 0, scale: 0.5 },
-//   };
 const Single = ({ item }) => {
   const ref = useRef();
 
@@ -43,13 +39,13 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section>
+    <section >
       <div className="container">
         <div className="wrapper">
-          <div className="imageContainer"  ref={ref}>
+          <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer"  style={{y}}>
+          <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
@@ -76,8 +72,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Feature Works</h1>
-        <motion.div className="progressBar" style={{ scaleX }}></motion.div>
+        <h1>Featured Works</h1>
+        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />

@@ -65,7 +65,7 @@ const Hero = () => {
         Freelancer Software Developer
       </motion.div>
       <div className="imageContainer">
-        <img src="./hero.png" alt="" width={750}/>
+        <img src="./hero.png" alt=""/>
       </div>
     </div>
   );
